@@ -1,13 +1,41 @@
+//Imports
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-/* 
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to right, #85b4e9 0%, #bed3eb 50%, #d0d5f3 100%);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+}
 
-*/
+.todo-form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.list{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+// .todo-list{
+//     border: solid;
+//     height: 100px;
+   
+    // height: fit-content;
+// }
