@@ -1,26 +1,26 @@
 //Import React
-// import React, { useState } from "react";
-// import Form from "./Form.jsx";
-// import Todo from "./ToDo.jsx";
+import React, { useState } from "react";
 // //Import proptypes
-// import Proptypes from "prop-types";
+import Proptypes from "prop-types";
 
-// const ToDoList = ({ todos }) => {
-// 	 //Hooks
-// const [todos, setTodo] = useState([]);
+const ToDoList = props => {
+	return (
+		<>
+			<div className="list">
+				<ul>
+					{props.todos.map((todo, i) => (
+						<li key={i} className="list-element">
+							{" "}
+							{todo}{" "}
+						</li>
+					))}
+				</ul>
+			</div>
+		</>
+	);
+};
 
-// 	return (
-// 		<>
-// 			<ul>
-// 				{todos.map((todo, i) =>
-// 					<li key={i}> {todo} </li>)
-// 				}
-// 			</ul>
-// 		</>
-// 	);
-// };
-
-// ToDoList.propTypes = {
-// 	todos: Proptypes.func
-// };
-// export default ToDoList;
+ToDoList.propTypes = {
+	todos: Proptypes.array
+};
+export default ToDoList;
