@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Proptypes from "prop-types";
 
 const Form = props => {
-	//prevents default when button is clicked
+	//Prevents default when button is clicked
 	const handleSubmit = ev => {
 		ev.preventDefault();
 	};
@@ -23,8 +23,8 @@ const Form = props => {
 				<button className="todo-button" onClick={props.addTodo}>
 					Add To Do
 				</button>
-				<button className="todo-button" onClick={props.deleteTodo}>
-					Delete To Do
+				<button className="delete-button" onClick={props.deleteTodo}>
+					Delete All
 				</button>
 			</form>
 		</>
@@ -32,7 +32,7 @@ const Form = props => {
 };
 
 Form.propTypes = {
-	input: Proptypes.array,
+	input: Proptypes.string,
 	inputTextChanger: Proptypes.func,
 	addTodo: Proptypes.func,
 	deleteTodo: Proptypes.func
