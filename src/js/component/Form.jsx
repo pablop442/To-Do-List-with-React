@@ -1,10 +1,7 @@
-//Import React
 import React from "react";
-//Import proptypes
 import Proptypes from "prop-types";
 
 const Form = props => {
-	//Prevents default when button is clicked
 	const handleSubmit = ev => {
 		ev.preventDefault();
 	};

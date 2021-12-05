@@ -1,10 +1,5 @@
-//Import React
 import React, { useState } from "react";
-
-// //Import proptypes
 import Proptypes from "prop-types";
-
-//Import resources
 import { BsFillTrashFill } from "react-icons/bs";
 
 const Item = props => {
